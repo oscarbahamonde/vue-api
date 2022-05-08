@@ -1,8 +1,11 @@
 <template>
-<router-link to="/">Home</router-link>
-<router-link to="/about">About</router-link>
-<router-link to="/contact">Contact</router-link>
-<router-link to="/login">Login</router-link>
-<router-link to="/profile">Profile</router-link>
+<Navbar />
+<div class="con pt-32 p-8 bg-base-300">
 <router-view></router-view>
+</div>
+<Footer />
 </template>
+<script setup>
+import Navbar from './layouts/NavBar.vue'
+import Footer from './layouts/Footer.vue'
+</script>
